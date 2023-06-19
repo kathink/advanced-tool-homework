@@ -3,7 +3,9 @@
   --secondary-color: #f5f2fe;
   --box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2);
 }
-
+body {
+  margin: 100px 0;
+}
 h1 {
   font-size: 100px;
 }
@@ -54,4 +56,22 @@ a:hover {
   text-decoration: none;
   font-size: 25px;
   color: var(--primary-color);
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p,
+  h2 {
+    text-align: center;
+  }
+
+  .app-link {
+    display: block;
+    margin: auto 20px;
+    text-align: center;
+  }
 }
