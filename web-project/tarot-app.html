@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astrology ☪🧐|LunaTarot</title>
+    <style>
+      body {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/675/original/2891839.jpg?1673036703);
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+        line-height: 1.5;
+      }
+      h1 {
+        margin: 0;
+        color: #151d3b;
+      }
+      h2 {
+        margin-top: 10px;
+        color: #9d84b7;
+        font-size: 19px;
+      }
+      h3 {
+        color: #151d3b;
+        line-height: 1.7;
+      }
+      h4 {
+        color: #b8405e;
+      }
+      p {
+        line-height: 1.5;
+        margin: 0;
+      }
+      img {
+        max-width: 30%;
+        border-radius: 20px;
+        margin: 10px 10px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 22px;
+        border: 1px solid #864879;
+        border-radius: 20px;
+        padding: 30px 40px;
+        background: #864879;
+        color: #fff;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #864879;
+        cursor: alias;
+      }
+      .content {
+        max-width: 800px;
+        margin: 40px auto;
+        background-color: #eeeeee;
+        padding: 30px 40px 40px 40px;
+        border-radius: 30px;
+      }
+
+      .zodiac {
+        display: block;
+        margin: 20px auto;
+        max-width: 50%;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+      }
+      .zodiac:hover {
+        opacity: 70%;
+      }
+      .info {
+        border: 2px dotted #243763;
+        border-radius: 20px;
+        padding: 10px;
+        max-width: 260px;
+        float: left;
+        margin: 40px 80px 0;
+        background: transparent;
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .info:hover {
+        background: #fff8f3;
+      }
+      .astrology {
+        border-radius: 50%;
+        margin: 10px 50px 10px 30px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+      }
+      .recommend {
+        font-style: italic;
+      }
+      .vietnamese {
+        font-size: 25px;
+      }
+      .birthday {
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+      }
+      .creator {
+        color: #3c6255;
+        text-align: center;
+        padding: 40px 0 0 0;
+      }
+      .horoscope:hover,
+      .tarot:hover,
+      .numerology:hover {
+        transform: scale(1.25);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>DISCOVER YOUR TRUE SELF🔮</h1>
+      <hr />
+      <h2>Start your new journey with astrology</h2>
+      <hr />
+      <div class="info">
+        <strong>astrology</strong>
+        <hr />
+        <p>
+          type of divination that involves the forecasting of earthly and human
+          events through the observation and interpretation of the fixed stars,
+          the Sun, the Moon, and the planets
+        </p>
+      </div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/682/original/astrology.jpg?1673039324
+"
+        class="astrology"
+        alt="Astrology Illustration"
+      />
+      <h4>
+        Unveil your past, present, and future with zodiacs, tarot, numerology,
+        and more!
+      </h4>
+      <div class="images">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/664/original/horoscope.jpg?1673028464
+"
+          class="horoscope"
+          alt="Daily Horoscope"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/665/original/tarot.png?1673028474
+"
+          class="tarot"
+          alt="Love Tarot Reading"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/663/original/numerology.png?1673028444
+"
+          class="numerology"
+          alt="Life Path Number"
+        />
+      </div>
+      <hr />
+      <h3>
+        <div class="recommend">Recommended for You</div>
+        <div class="vietnamese">VIETNAMESE ZODIAC SIGNS</div>
+      </h3>
+      <a
+        href="https://www.vietnamdrive.com/cat-year/"
+        target="_blank"
+        title="2023 - The Year of Water Cat"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/672/original/Vietnamese-zodiac.jpg?1673033167
+  "
+          class="zodiac"
+          alt="Vietnamese Zodiac Signs"
+        />
+      </a>
+      <div class="birthday">
+        <hr />
+        <h2 class="signUp">Take a look at your birthday chart 👇</h2>
+        <button>Free Astrology Reports</button>
+      </div>
+      <div class="creator">This site was built by Uyen Pham</div>
+    </div>
+
+    <script>
+      function chartCalculator() {
+        let announce = document.querySelector(".signUp");
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert("Please fill out this field 🙏");
+          event.preventDefault();
+        } else {
+          let birthday = prompt("What's your date of birth?");
+          if (birthday === "") {
+            alert("Please fill out this field 🙏");
+            event.preventDefault();
+          } else {
+            let time = prompt("What time were you born (eg.: 1pm, 2am)");
+            if (time === "") {
+              alert("Please fill out this field 🙏");
+              event.preventDefault();
+            } else {
+              let email = prompt("What's your email address?");
+              if (email === "") {
+                alert("Please fill out this field 🙏");
+                event.preventDefault();
+              } else {
+                announce.innerHTML = `Enjoy reading your Report, ${name}!`;
+                alert(
+                  `Thank you, ${name}! Your birthday chart has been sent to your email 📧`
+                );
+              }
+            }
+          }
+        }
+      }
+      let birthChart = document.querySelector("button");
+      birthChart.addEventListener("click", chartCalculator);
+    </script>
+  </body>
+</html>
